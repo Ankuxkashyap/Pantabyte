@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantabyte — Everything Digital</title>
+    <meta
+      name="description"
+      content="Digital consulting firm delivering comprehensive solutions from web design to business automation"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="pb-nav navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center gap-2"
+        >
+          <img
+            src="assets/images/Logo.png"
+            alt="Pantabyte"
+            class="pb-nav-logo"
+          />
+          <span class="pb-nav-brand">Pantabyte</span>
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pbNav"
+        >
+          <i class="bi bi-list fs-2 pb-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pbNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a
+                href="contact.html"
+                class="btn pb-btn-primary rounded-pill px-4 py-2"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="pb-hero-wrap" style="padding-top: 70px">
+      <section class="pb-hero d-flex align-items-center">
+        <div class="pb-hero-overlay"></div>
+
+        <div class="pb-scroll-hint">
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div class="container-xl position-relative" style="z-index: 2">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 col-xl-7">
+              <p class="pb-eyebrow">Your Digital Transformation Partner</p>
+
+              <h1 class="pb-hero-h1">
+                Everything<br />
+                <em>Digital.</em>
+              </h1>
+
+              <p class="pb-hero-desc">
+                Your partner for complete digital transformation. From strategy
+                to execution, we deliver integrated solutions that unlock your
+                full potential.
+              </p>
+
+              <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
+                <button
+                  onclick="
+                    document
+                      .getElementById('contact')
+                      .scrollIntoView({ behavior: 'smooth' })
+                  "
+                  class="btn pb-btn-primary btn-lg rounded-pill px-5 py-3"
+                >
+                  Start Your Journey
+                </button>
+                <button
+                  onclick="
+                    document
+                      .getElementById('services')
+                      .scrollIntoView({ behavior: 'smooth' })
+                  "
+                  class="btn pb-btn-ghost btn-lg rounded-pill px-5 py-3"
+                >
+                  Explore Services
+                </button>
+              </div>
+
+              <!-- <div class="pb-trust-bar d-inline-flex align-items-center gap-3">
+                <span><i class="bi bi-laptop me-1"></i> Web Design</span>
+                <span class="pb-trust-sep">·</span>
+                <span><i class="bi bi-megaphone me-1"></i> Marketing</span>
+                <span class="pb-trust-sep">·</span>
+                <span><i class="bi bi-gear-fill me-1"></i> Automation</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="pb-section pb-section-gray">
+      <div class="container-xl">
+        <div class="mb-5">
+          <p class="pb-label">Our Services</p>
+          <h2 class="pb-h2">
+            Comprehensive solutions,<br /><em>built to scale.</em>
+          </h2>
+        </div>
+
+        <!-- Featured card -->
+        <div class="pb-card-feat rounded-4 overflow-hidden row g-0 mb-4">
+          <div class="col-lg-5 order-lg-2">
+            <div class="pb-feat-img">
+              <img
+                src="/assets/images/WebDesign.jpg"
+                alt="Web Design & Development"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-7 order-lg-1 p-4 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <span class="pb-card-num">01 — Featured</span>
+            <h3 class="pb-card-h">Web Design &amp; Development</h3>
+            <p class="pb-card-p">
+              Robust, efficient solutions with clean code and scalable
+              architectures. From landing pages to complex applications, we
+              build digital products that perform.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="pb-chip">UI/UX Design</span>
+              <span class="pb-chip">React &amp; Next.js</span>
+              <span class="pb-chip">CMS</span>
+              <span class="pb-chip">E-commerce</span>
+            </div>
+            <a
+              href="#contact"
+              class="pb-card-link d-inline-flex align-items-center gap-2"
+            >
+              Start a project <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Two cards -->
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="pb-card rounded-4 overflow-hidden h-100">
+              <div class="pb-card-img">
+                <img
+                  src="/assets/images/DigitalMarketing.jpg"
+                  alt="Digital Marketing"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4 p-lg-5">
+                <span class="pb-card-num">02</span>
+                <h3 class="pb-card-h-sm">Digital Marketing</h3>
+                <p class="pb-card-p-sm">
+                  Strategic campaigns grounded in psychology and data that drive
+                  measurable, sustainable growth across all channels.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="pb-chip">SEO</span>
+                  <span class="pb-chip">Paid Ads</span>
+                  <span class="pb-chip">Social Media</span>
+                </div>
+                <a
+                  href="#contact"
+                  class="pb-card-link d-inline-flex align-items-center gap-2"
+                >
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-card rounded-4 overflow-hidden h-100">
+              <div class="pb-card-img">
+                <img
+                  src="/assets/images/BusinessAutomation.jpg"
+                  alt="Business Automation"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4 p-lg-5">
+                <span class="pb-card-num">03</span>
+                <h3 class="pb-card-h-sm">Business Automation</h3>
+                <p class="pb-card-p-sm">
+                  Intelligent workflows that optimise performance by mapping,
+                  automating, and streamlining your core business operations.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="pb-chip">AI Workflows</span>
+                  <span class="pb-chip">Zapier / Make</span>
+                  <span class="pb-chip">CRM</span>
+                </div>
+                <a
+                  href="#contact"
+                  class="pb-card-link d-inline-flex align-items-center gap-2"
+                >
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="pb-section pb-section-white">
+      <div class="container-xl">
+        <div class="mb-5">
+          <p class="pb-label">How We Think</p>
+          <h2 class="pb-h2">
+            A philosophy built<br /><em>for lasting impact.</em>
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="pb-pillar pb-pillar-light h-100 p-4 p-lg-5 rounded-4">
+              <div class="pb-pill-icon mb-4">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <p class="pb-pill-num">01</p>
+              <h4 class="pb-pill-h">People + Process</h4>
+              <p class="pb-pill-p">
+                Streamlined workflows that empower teams, eliminate waste, and
+                create human-centred outcomes at scale.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pb-pillar pb-pillar-dark h-100 p-4 p-lg-5 rounded-4">
+              <div class="pb-pill-icon pb-pill-icon-dark mb-4">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <p class="pb-pill-num pb-pill-num-dark">02</p>
+              <h4 class="pb-pill-h pb-pill-h-dark">Cutting-Edge Technology</h4>
+              <p class="pb-pill-p pb-pill-p-dark">
+                AI, automation, and modern platforms that amplify your impact
+                and keep you ahead of the competition.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="pb-pillar pb-pillar-light h-100 p-4 p-lg-5 rounded-4">
+              <div class="pb-pill-icon mb-4">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <p class="pb-pill-num">03</p>
+              <h4 class="pb-pill-h">Sustainability (ESG)</h4>
+              <p class="pb-pill-p">
+                Environmental stewardship and social responsibility embedded in
+                every engagement we undertake.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="pb-section pb-section-gray">
+      <div class="container-xl">
+        <div class="row mb-5 align-items-end">
+          <div class="col-lg-5">
+            <p class="pb-label">The Pantabyte Edge</p>
+            <h2 class="pb-h2">Why choose<br /><em>Pantabyte?</em></h2>
+          </div>
+          <div class="col-lg-5 ms-auto">
+            <p class="pb-section-sub">
+              Comprehensive expertise, proven methodologies, and genuine
+              commitment to your success.
+            </p>
+          </div>
+        </div>
+
+        <div class="pb-why-grid row g-0">
+          <div class="col-md-6">
+            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Universal Capability</h5>
+                <p class="pb-wp">
+                  One partner for all digital needs — strategy, execution, and
+                  optimisation under one roof.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Proven Framework</h5>
+                <p class="pb-wp">
+                  Science-based fusion of excellence principles delivering
+                  consistent, measurable results.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Future-Ready</h5>
+                <p class="pb-wp">
+                  Solutions built on flexible architectures that adapt as your
+                  business evolves.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Expert Team</h5>
+                <p class="pb-wp">
+                  Deep experience across design, engineering, and growth
+                  strategy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-why-cell pb-why-cell-nb p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-bar-chart-fill"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Measurable Results</h5>
+                <p class="pb-wp">
+                  Data-driven approach with clear KPIs and transparent reporting
+                  at every stage.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="pb-why-cell pb-why-cell-nb p-4 p-lg-5 d-flex gap-4">
+              <div class="pb-wi flex-shrink-0">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <div>
+                <h5 class="pb-wh">Sustainable Impact</h5>
+                <p class="pb-wp">
+                  Every solution benefits your business, your people, and the
+                  planet long-term.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="pb-cta-section">
+      <div class="pb-cta-dots"></div>
+      <div class="container-xl position-relative" style="z-index: 1">
+        <div class="row justify-content-center text-center py-7">
+          <div class="col-lg-7">
+            <p class="pb-label pb-label-light">Let's Work Together</p>
+            <h2 class="pb-cta-h">
+              Ready to transform<br /><em>digitally?</em>
+            </h2>
+            <p class="pb-cta-sub">
+              Let's partner together to shape a sustainable, digitally empowered
+              future for your organisation.
+            </p>
+
+            <div
+              class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4"
+            >
+              <button
+                onclick=""
+                class="btn pb-btn-white btn-lg rounded-pill px-5 py-3 fw-semibold"
+              >
+                Schedule a Consultation
+              </button>
+              <button
+                class="btn pb-btn-ghost-w btn-lg rounded-pill px-5 py-3 fw-semibold"
+              >
+                View Case Studies
+              </button>
+            </div>
+
+            <p class="pb-cta-email">
+              Or reach us at
+              <a href="mailto:hello@pantabyte.com">hello@pantabyte.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-footer">
+      <div class="container-xl">
+        <div class="row gy-5 pb-5 pb-footer-border">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img
+                src="assets/images/Logo.png"
+                alt="Pantabyte"
+                style="height: 36px"
+              />
+              <span class="pb-nav-brand" style="color: #fff">Pantabyte</span>
+            </div>
+            <p class="pb-footer-muted">
+              Everything Digital.<br />Your partner for complete digital
+              transformation.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="#" class="pb-social"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-github"></i></a>
+              <a href="mailto:hello@pantabyte.com" class="pb-social"
+                ><i class="bi bi-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Services</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="services.html">Web Design &amp; Dev</a></li>
+              <li><a href="services.html">Digital Marketing</a></li>
+              <li><a href="services.html">Business Automation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Company</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="pb-footer-head">Stay in the loop</h6>
+            <p class="pb-footer-muted small mb-3">
+              Get digital insights delivered to your inbox.
+            </p>
+            <div class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control pb-footer-input"
+                placeholder="your@email.com"
+              />
+              <button
+                class="btn pb-btn-primary rounded-pill px-4 fw-semibold flex-shrink-0"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4"
+        >
+          <p class="mb-0 pb-footer-copy">
+            &copy; <span id="year"></span> Pantabyte. All rights reserved.
+          </p>
+          <div class="mt-2 mt-md-0">
+            <a href="privacy-policy.html" class="pb-footer-bl"
+              >Privacy Policy</a
+            >
+            <a href="#" class="pb-footer-bl ms-4">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

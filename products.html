@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products — Pantabyte</title>
+    <meta
+      name="description"
+      content="Explore Pantabyte's digital products and services — web design, marketing, and automation solutions built for your business."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="pb-nav navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center gap-2"
+        >
+          <img
+            src="assets/images/Logo.png"
+            alt="Pantabyte"
+            class="pb-nav-logo"
+          />
+          <span class="pb-nav-brand">Pantabyte</span>
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pbNav"
+        >
+          <i class="bi bi-list fs-2 pb-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pbNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a
+                href="contact.html"
+                class="btn pb-btn-primary rounded-pill px-4 py-2"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="pb-products-header">
+      <div class="container-xl">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7">
+            <p class="pb-label">What We Build</p>
+            <h1 class="pb-page-title">Our Products &amp; Solutions</h1>
+            <p class="pb-page-sub mx-auto">
+              Everything your business needs to grow digitally — built, managed,
+              and optimised by Pantabyte.
+            </p>
+          </div>
+        </div>
+
+        <!-- Category filter tabs -->
+        <div
+          class="pb-filter-tabs d-flex flex-wrap justify-content-center gap-2 mt-5"
+        >
+          <button class="pb-filter-btn pb-filter-active" data-filter="all">
+            All
+          </button>
+          <button class="pb-filter-btn" data-filter="web">Web</button>
+          <button class="pb-filter-btn" data-filter="marketing">
+            Marketing
+          </button>
+          <button class="pb-filter-btn" data-filter="automation">
+            Automation
+          </button>
+          <button class="pb-filter-btn" data-filter="strategy">Strategy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS GRID -->
+    <section class="pb-products-section">
+      <div class="container-xl">
+        <!-- ── WEB ── -->
+        <div class="pb-product-category mb-5">
+          <h2 class="pb-product-cat-title">Web</h2>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4" data-cat="web">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff3e8">
+                  <i class="bi bi-layout-wtf" style="color: #ea580c"></i>
+                </div>
+                <h3 class="pb-product-name">Web Design</h3>
+                <p class="pb-product-desc">
+                  Pixel-perfect, responsive websites designed to convert
+                  visitors into customers. Built with your brand and your users
+                  in mind.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="web">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #eef4ff">
+                  <i class="bi bi-code-slash" style="color: #3b82f6"></i>
+                </div>
+                <h3 class="pb-product-name">Web Development</h3>
+                <p class="pb-product-desc">
+                  Scalable, fast, and secure web applications built with modern
+                  frameworks. From simple landing pages to complex platforms.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="web">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #f0fdf4">
+                  <i class="bi bi-cart4" style="color: #16a34a"></i>
+                </div>
+                <h3 class="pb-product-name">E-commerce</h3>
+                <p class="pb-product-desc">
+                  Full-featured online stores with payment integration,
+                  inventory management, and a checkout experience that converts.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="web">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fdf4ff">
+                  <i class="bi bi-pencil-square" style="color: #a855f7"></i>
+                </div>
+                <h3 class="pb-product-name">CMS Solutions</h3>
+                <p class="pb-product-desc">
+                  Content management systems that let your team publish, edit,
+                  and manage your website without touching code.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="web">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff8e8">
+                  <i class="bi bi-phone" style="color: #f59e0b"></i>
+                </div>
+                <h3 class="pb-product-name">Mobile-First Design</h3>
+                <p class="pb-product-desc">
+                  Interfaces designed for mobile users first — because over 60%
+                  of your visitors are on their phones right now.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── MARKETING ── -->
+        <div class="pb-product-category mb-5">
+          <h2 class="pb-product-cat-title">Marketing</h2>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4" data-cat="marketing">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff3e8">
+                  <i class="bi bi-search" style="color: #ea580c"></i>
+                </div>
+                <h3 class="pb-product-name">SEO</h3>
+                <p class="pb-product-desc">
+                  Organic search strategies that bring the right people to your
+                  website — without paying for every click. Built to compound
+                  over time.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="marketing">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #eef4ff">
+                  <i class="bi bi-megaphone-fill" style="color: #3b82f6"></i>
+                </div>
+                <h3 class="pb-product-name">Paid Advertising</h3>
+                <p class="pb-product-desc">
+                  Google, Meta, and LinkedIn ad campaigns managed for maximum
+                  ROI. We build, test, and optimise every campaign we run.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="marketing">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fdf4ff">
+                  <i class="bi bi-instagram" style="color: #a855f7"></i>
+                </div>
+                <h3 class="pb-product-name">Social Media</h3>
+                <p class="pb-product-desc">
+                  Content strategy, creative production, and community
+                  management across the platforms your customers actually use.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="marketing">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #f0fdf4">
+                  <i
+                    class="bi bi-envelope-open-fill"
+                    style="color: #16a34a"
+                  ></i>
+                </div>
+                <h3 class="pb-product-name">Email Marketing</h3>
+                <p class="pb-product-desc">
+                  Automated email sequences and newsletters that nurture leads,
+                  retain customers, and drive repeat revenue on autopilot.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="marketing">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff8e8">
+                  <i class="bi bi-bar-chart-fill" style="color: #f59e0b"></i>
+                </div>
+                <h3 class="pb-product-name">Analytics &amp; Reporting</h3>
+                <p class="pb-product-desc">
+                  Full-funnel tracking dashboards and monthly reports that show
+                  exactly what is working and where to invest next.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── AUTOMATION ── -->
+        <div class="pb-product-category mb-5">
+          <h2 class="pb-product-cat-title">Automation</h2>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4" data-cat="automation">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff3e8">
+                  <i class="bi bi-diagram-3-fill" style="color: #ea580c"></i>
+                </div>
+                <h3 class="pb-product-name">Workflow Automation</h3>
+                <p class="pb-product-desc">
+                  Map, design, and automate your repetitive business processes
+                  so your team can focus on the work that actually matters.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="automation">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #eef4ff">
+                  <i class="bi bi-cpu-fill" style="color: #3b82f6"></i>
+                </div>
+                <h3 class="pb-product-name">AI Integration</h3>
+                <p class="pb-product-desc">
+                  Connect AI tools into your existing business stack — from
+                  intelligent lead qualification to automated customer support.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="automation">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #f0fdf4">
+                  <i class="bi bi-people-fill" style="color: #16a34a"></i>
+                </div>
+                <h3 class="pb-product-name">CRM Setup</h3>
+                <p class="pb-product-desc">
+                  CRM implementation and configuration so you never lose a lead,
+                  miss a follow-up, or forget a customer interaction.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="automation">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fdf4ff">
+                  <i class="bi bi-plug-fill" style="color: #a855f7"></i>
+                </div>
+                <h3 class="pb-product-name">System Integration</h3>
+                <p class="pb-product-desc">
+                  Connect your tools so they talk to each other — CRM, payments,
+                  email, project management, and more in one seamless flow.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STRATEGY ── -->
+        <div class="pb-product-category mb-5">
+          <h2 class="pb-product-cat-title">Strategy</h2>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4" data-cat="strategy">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #fff3e8">
+                  <i class="bi bi-compass-fill" style="color: #ea580c"></i>
+                </div>
+                <h3 class="pb-product-name">Digital Strategy</h3>
+                <p class="pb-product-desc">
+                  A phased roadmap that maps your current state, identifies your
+                  highest-leverage opportunities, and tells you exactly where to
+                  start.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="strategy">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #eef4ff">
+                  <i
+                    class="bi bi-clipboard2-data-fill"
+                    style="color: #3b82f6"
+                  ></i>
+                </div>
+                <h3 class="pb-product-name">Digital Audit</h3>
+                <p class="pb-product-desc">
+                  A full review of your current website, marketing, and
+                  operations — with a clear report on what is working and what
+                  is not.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4" data-cat="strategy">
+              <div class="pb-product-card p-4 rounded-4 h-100">
+                <div class="pb-product-icon" style="background: #f0fdf4">
+                  <i class="bi bi-shield-check" style="color: #16a34a"></i>
+                </div>
+                <h3 class="pb-product-name">ESG Consulting</h3>
+                <p class="pb-product-desc">
+                  Build a business that is good for people and the planet — with
+                  sustainability and social responsibility built into your
+                  digital strategy.
+                </p>
+                <a href="contact.html" class="pb-product-link">
+                  Learn more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pb-cta-section">
+      <div class="pb-cta-dots"></div>
+      <div class="container-xl position-relative" style="z-index: 1">
+        <div class="row justify-content-center text-center py-7">
+          <div class="col-lg-7">
+            <p class="pb-label pb-label-light">Not sure where to start?</p>
+            <h2 class="pb-cta-h">
+              Let's find the right<br /><em>solution for you.</em>
+            </h2>
+            <p class="pb-cta-sub">
+              Book a free consultation and we'll recommend exactly what your
+              business needs.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4"
+            >
+              <a
+                href="contact.html"
+                class="btn pb-btn-white btn-lg rounded-pill px-5 py-3 fw-semibold"
+              >
+                Book a Free Consultation
+              </a>
+              <a
+                href="services.html"
+                class="btn pb-btn-ghost-w btn-lg rounded-pill px-5 py-3 fw-semibold"
+              >
+                View Services
+              </a>
+            </div>
+            <p class="pb-cta-email">
+              Or email us at
+              <a href="mailto:hello@pantabyte.com">hello@pantabyte.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pb-footer">
+      <div class="container-xl">
+        <div class="row gy-5 pb-5 pb-footer-border">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img
+                src="assets/images/Logo.png"
+                alt="Pantabyte"
+                style="height: 36px"
+              />
+              <span class="pb-nav-brand" style="color: #fff">Pantabyte</span>
+            </div>
+            <p class="pb-footer-muted">
+              Everything Digital.<br />Your partner for complete digital
+              transformation.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="#" class="pb-social"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-github"></i></a>
+              <a href="mailto:hello@pantabyte.com" class="pb-social"
+                ><i class="bi bi-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Services</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="services.html">Web Design &amp; Dev</a></li>
+              <li><a href="services.html">Digital Marketing</a></li>
+              <li><a href="services.html">Business Automation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Company</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="pb-footer-head">Stay in the loop</h6>
+            <p class="pb-footer-muted small mb-3">
+              Get digital insights delivered to your inbox.
+            </p>
+            <div class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control pb-footer-input"
+                placeholder="your@email.com"
+              />
+              <button
+                class="btn pb-btn-primary rounded-pill px-4 fw-semibold flex-shrink-0"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4"
+        >
+          <p class="mb-0 pb-footer-copy">
+            &copy; <span id="year"></span> Pantabyte. All rights reserved.
+          </p>
+          <div class="mt-2 mt-md-0">
+            <a href="privacy-policy.html" class="pb-footer-bl"
+              >Privacy Policy</a
+            >
+            <a href="#" class="pb-footer-bl ms-4">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

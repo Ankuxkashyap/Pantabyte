@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Pantabyte</title>
+    <meta
+      name="description"
+      content="Insights, guides and updates from the Pantabyte team."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="pb-nav navbar navbar-expand-lg">
+      <div class="container-xl">
+        <a
+          href="index.html"
+          class="navbar-brand d-flex align-items-center gap-2"
+        >
+          <img
+            src="assets/images/Logo.png"
+            alt="Pantabyte"
+            class="pb-nav-logo"
+          />
+          <span class="pb-nav-brand">Pantabyte</span>
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#pbNav"
+        >
+          <i class="bi bi-list fs-2 pb-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pbNav">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a
+                href="contact.html"
+                class="btn pb-btn-primary rounded-pill px-4 py-2"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="pb-page-header">
+      <div class="container-xl">
+        <p class="pb-label">Our Blog</p>
+        <h1 class="pb-page-title">Insights &amp; Updates</h1>
+        <p class="pb-page-sub">
+          Thoughts on digital transformation, design, marketing and automation.
+        </p>
+      </div>
+    </div>
+
+    <!-- BLOG GRID -->
+    <section class="pb-section pb-section-gray">
+      <div class="container-xl">
+        <!-- Featured post -->
+        <div class="pb-blog-feat rounded-4 overflow-hidden row g-0 mb-5">
+          <div class="col-lg-6">
+            <div class="pb-blog-feat-img">
+              <img
+                src="https://picsum.photos/id/0/900/600"
+                alt="Featured post"
+                class="w-100 h-100 object-fit-cover"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 p-4 p-lg-5 d-flex flex-column justify-content-center"
+          >
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="pb-blog-cat">Digital Marketing</span>
+              <span class="pb-blog-date">March 12, 2026</span>
+            </div>
+            <h2 class="pb-blog-feat-title">
+              How to Build a Digital Marketing Strategy That Actually Works in
+              2026
+            </h2>
+            <p class="pb-blog-excerpt">
+              Most digital marketing strategies fail because they chase tactics
+              instead of building systems. Here's how to think about it
+              differently and build something that compounds over time.
+            </p>
+            <a
+              href="blog-post.html"
+              class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+            >
+              Read article <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog grid -->
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/48/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">Web Design</span>
+                  <span class="pb-blog-date">Feb 28, 2026</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  5 Web Design Trends Dominating 2026
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  From bento grids to kinetic typography — the design patterns
+                  reshaping the web this year.
+                </p>
+                <a
+                  href="blog-post.html"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/60/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">Automation</span>
+                  <span class="pb-blog-date">Feb 14, 2026</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  Automate Your Business in 30 Days — A Practical Guide
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  A step-by-step playbook for identifying the right processes to
+                  automate first and tools to use.
+                </p>
+                <a
+                  href="#"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/119/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">SEO</span>
+                  <span class="pb-blog-date">Jan 30, 2026</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  Why SEO Still Matters More Than Ever in the AI Era
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  AI is changing search — but that doesn't mean SEO is dead.
+                  Here's what actually changed and what didn't.
+                </p>
+                <a
+                  href="#"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/180/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">Web Design</span>
+                  <span class="pb-blog-date">Jan 15, 2026</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  The Real Cost of a Slow Website (And How to Fix It)
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  Every second of load time costs you conversions. Here's the
+                  data and what to do about it.
+                </p>
+                <a
+                  href="blog-post.html"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/201/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">Digital Marketing</span>
+                  <span class="pb-blog-date">Jan 3, 2026</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  Paid Ads vs Organic: Where Should You Invest First?
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  The honest answer depends on your stage, budget, and goals.
+                  Here's a framework to decide.
+                </p>
+                <a
+                  href="blog-post.html"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pb-blog-card rounded-4 overflow-hidden h-100">
+              <div class="pb-blog-img">
+                <img
+                  src="https://picsum.photos/id/96/600/400"
+                  alt=""
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <span class="pb-blog-cat">Automation</span>
+                  <span class="pb-blog-date">Dec 20, 2025</span>
+                </div>
+                <h3 class="pb-blog-title">
+                  Top 7 Tools We Use to Automate Client Workflows
+                </h3>
+                <p class="pb-blog-excerpt-sm">
+                  From Make to Notion AI — the exact stack we use and recommend
+                  to clients in 2026.
+                </p>
+                <a
+                  href="blog-post.html"
+                  class="pb-card-link d-inline-flex align-items-center gap-2 mt-3"
+                >
+                  Read more <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pb-footer">
+      <div class="container-xl">
+        <div class="row gy-5 pb-5 pb-footer-border">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img
+                src="assets/images/Logo.png"
+                alt="Pantabyte"
+                style="height: 36px"
+              />
+              <span class="pb-nav-brand" style="color: #fff">Pantabyte</span>
+            </div>
+            <p class="pb-footer-muted">
+              Everything Digital.<br />Your partner for complete digital
+              transformation.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <a href="#" class="pb-social"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="pb-social"><i class="bi bi-github"></i></a>
+              <a href="mailto:hello@pantabyte.com" class="pb-social"
+                ><i class="bi bi-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Services</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="services.html">Web Design &amp; Dev</a></li>
+              <li><a href="services.html">Digital Marketing</a></li>
+              <li><a href="services.html">Business Automation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="pb-footer-head">Company</h6>
+            <ul class="list-unstyled pb-flinks">
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="pb-footer-head">Stay in the loop</h6>
+            <p class="pb-footer-muted small mb-3">
+              Get digital insights delivered to your inbox.
+            </p>
+            <div class="d-flex gap-2">
+              <input
+                type="email"
+                class="form-control pb-footer-input"
+                placeholder="your@email.com"
+              />
+              <button
+                class="btn pb-btn-primary rounded-pill px-4 fw-semibold flex-shrink-0"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4"
+        >
+          <p class="mb-0 pb-footer-copy">
+            &copy; <span id="year"></span> Pantabyte. All rights reserved.
+          </p>
+          <div class="mt-2 mt-md-0">
+            <a href="privacy-policy.html" class="pb-footer-bl"
+              >Privacy Policy</a
+            >
+            <a href="#" class="pb-footer-bl ms-4">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
