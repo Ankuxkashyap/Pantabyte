@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="pb-nav navbar navbar-expand-lg">
       <div class="container-xl">
         <a
@@ -74,7 +73,6 @@
       </div>
     </nav>
 
-    <!-- Hero -->
     <div class="pb-hero-wrap" style="padding-top: 70px">
       <section class="pb-hero d-flex align-items-center">
         <div class="pb-hero-overlay"></div>
@@ -83,7 +81,10 @@
           <div class="row justify-content-center text-center">
             <div class="col-lg-8 col-xl-7">
               <p class="pb-eyebrow">Your Digital Transformation Partner</p>
-              <h1 class="pb-hero-h1">Everything<br /><em>Digital.</em></h1>
+              <h1 class="pb-hero-h1">
+                Everything
+                <span class="highlight">Digital</span>
+              </h1>
               <p class="pb-hero-desc">
                 Your partner for complete digital transformation. From strategy
                 to execution, we deliver integrated solutions that unlock your
@@ -119,7 +120,6 @@
       </section>
     </div>
 
-    <!-- Services -->
     <section id="services" class="pb-section pb-section-gray">
       <div class="container-xl">
         <div class="mb-5 reveal">
@@ -129,109 +129,113 @@
           </h2>
         </div>
 
-        <div class="pb-card-feat rounded-4 overflow-hidden row g-0 mb-4 reveal">
-          <div class="col-lg-5 order-lg-2">
-            <div class="pb-feat-img">
+        <!-- cards grid -->
+        <div class="pb-featured-cards-grid reveal">
+          <!-- Card 1 -->
+          <!-- <a href="contact.html" class="pb-gcard pb-gcard-featured">
+            <div class="pb-gcard-img">
               <img
                 src="assets/images/WebDesign.jpg"
                 alt="Web Design & Development"
-                class="w-100 h-100 object-fit-cover"
               />
             </div>
-          </div>
-          <div
-            class="col-lg-7 order-lg-1 p-4 p-lg-5 d-flex flex-column justify-content-center"
-          >
-            <span class="pb-card-num">01 — Featured</span>
-            <h3 class="pb-card-h">Web Design &amp; Development</h3>
-            <p class="pb-card-p">
-              Robust, efficient solutions with clean code and scalable
-              architectures. From landing pages to complex applications, we
-              build digital products that perform.
-            </p>
-            <div class="d-flex flex-wrap gap-2 mb-4">
-              <span class="pb-chip">UI/UX Design</span>
-              <span class="pb-chip">React &amp; Next.js</span>
-              <span class="pb-chip">CMS</span>
-              <span class="pb-chip">E-commerce</span>
+            <div class="pb-gcard-body">
+              <span class="pb-gcard-cat">Web Design &amp; Development</span>
+              <h3 class="pb-gcard-title">
+                Robust, efficient solutions with clean code and scalable
+                architectures.
+              </h3>
+              <div class="pb-gcard-tags">
+                <span class="pb-gcard-tag">UI/UX Design</span>
+                <span class="pb-gcard-tag">React &amp; Next.js</span>
+                <span class="pb-gcard-tag">CMS</span>
+                <span class="pb-gcard-tag">E-commerce</span>
+              </div>
+              <span class="pb-gcard-link"
+                >Learn more <i class="bi bi-arrow-right"></i
+              ></span>
             </div>
-            <a
-              href="contact.html"
-              class="pb-card-link d-inline-flex align-items-center gap-2"
-            >
-              Start a project <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
+          </a> -->
 
-        <div class="row g-4">
-          <div class="col-md-6 reveal reveal-d1">
-            <div class="pb-card rounded-4 overflow-hidden h-100">
-              <div class="pb-card-img">
-                <img
-                  src="assets/images/DigitalMarketing.jpg"
-                  alt="Digital Marketing"
-                  class="w-100 h-100 object-fit-cover"
-                />
-              </div>
-              <div class="p-4 p-lg-5">
-                <span class="pb-card-num">02</span>
-                <h3 class="pb-card-h-sm">Digital Marketing</h3>
-                <p class="pb-card-p-sm">
-                  Strategic campaigns grounded in psychology and data that drive
-                  measurable, sustainable growth across all channels.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="pb-chip">SEO</span>
-                  <span class="pb-chip">Paid Ads</span>
-                  <span class="pb-chip">Social Media</span>
-                </div>
-                <a
-                  href="contact.html"
-                  class="pb-card-link d-inline-flex align-items-center gap-2"
-                >
-                  Learn more <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+          <!-- Card 2 -->
+          <a href="contact.html" class="pb-gcard">
+            <div class="pb-gcard-img">
+              <img
+                src="assets/images/WebDesign.jpg"
+                alt="Web Design & Development"
+              />
             </div>
-          </div>
+            <div class="pb-gcard-body">
+              <span class="pb-gcard-cat">Digital Marketing</span>
+              <h3 class="pb-gcard-title">
+                Robust, efficient solutions with clean code and scalable
+                architectures.
+              </h3>
+              <div class="pb-gcard-tags">
+                <span class="pb-gcard-tag">UI/UX Design</span>
+                <span class="pb-gcard-tag">React &amp; Next.js</span>
+                <span class="pb-gcard-tag">CMS</span>
+                <span class="pb-gcard-tag">E-commerce</span>
+              </div>
+              <span class="pb-gcard-link"
+                >Learn more <i class="bi bi-arrow-right"></i
+              ></span>
+            </div>
+          </a>
 
-          <div class="col-md-6 reveal reveal-d2">
-            <div class="pb-card rounded-4 overflow-hidden h-100">
-              <div class="pb-card-img">
-                <img
-                  src="assets/images/BusinessAutomation.jpg"
-                  alt="Business Automation"
-                  class="w-100 h-100 object-fit-cover"
-                />
-              </div>
-              <div class="p-4 p-lg-5">
-                <span class="pb-card-num">03</span>
-                <h3 class="pb-card-h-sm">Business Automation</h3>
-                <p class="pb-card-p-sm">
-                  Intelligent workflows that optimise performance by mapping,
-                  automating, and streamlining your core business operations.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="pb-chip">AI Workflows</span>
-                  <span class="pb-chip">Zapier / Make</span>
-                  <span class="pb-chip">CRM</span>
-                </div>
-                <a
-                  href="contact.html"
-                  class="pb-card-link d-inline-flex align-items-center gap-2"
-                >
-                  Learn more <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
+          <a href="contact.html" class="pb-gcard">
+            <div class="pb-gcard-img">
+              <img
+                src="assets/images/DigitalMarketing.jpg"
+                alt="Digital Marketing"
+              />
             </div>
-          </div>
+            <div class="pb-gcard-body">
+              <span class="pb-gcard-cat">Digital Marketing</span>
+              <h3 class="pb-gcard-title">
+                Strategic campaigns grounded in data that drive measurable,
+                sustainable growth.
+              </h3>
+              <div class="pb-gcard-tags">
+                <span class="pb-gcard-tag">SEO</span>
+                <span class="pb-gcard-tag">Paid Ads</span>
+                <span class="pb-gcard-tag">Social Media</span>
+              </div>
+              <span class="pb-gcard-link"
+                >Learn more <i class="bi bi-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="contact.html" class="pb-gcard">
+            <div class="pb-gcard-img">
+              <img
+                src="assets/images/BusinessAutomation.jpg"
+                alt="Business Automation"
+              />
+            </div>
+            <div class="pb-gcard-body">
+              <span class="pb-gcard-cat">Business Automation</span>
+              <h3 class="pb-gcard-title">
+                Intelligent workflows that optimise and streamline your core
+                business operations.
+              </h3>
+              <div class="pb-gcard-tags">
+                <span class="pb-gcard-tag">AI Workflows</span>
+                <span class="pb-gcard-tag">Zapier / Make</span>
+                <span class="pb-gcard-tag">CRM</span>
+              </div>
+              <span class="pb-gcard-link"
+                >Learn more <i class="bi bi-arrow-right"></i
+              ></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Philosophy -->
-    <section id="philosophy" class="pb-section pb-section-white">
+    <!-- <section id="philosophy" class="pb-section pb-section-white">
       <div class="container-xl">
         <div class="mb-5 reveal">
           <p class="pb-label">How We Think</p>
@@ -282,9 +286,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Why choose -->
     <section id="why" class="pb-section pb-section-gray">
       <div class="container-xl">
         <div class="row mb-5 align-items-end reveal">
@@ -300,96 +303,82 @@
           </div>
         </div>
 
-        <div class="pb-why-grid row g-0 reveal">
-          <div class="col-md-6">
-            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-lightning-charge-fill"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Universal Capability</h5>
-                <p class="pb-wp">
-                  One partner for all digital needs — strategy, execution, and
-                  optimisation under one roof.
-                </p>
-              </div>
+        <div class="pb-why-grid reveal">
+          <div class="pb-why-cell d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Universal Capability</h5>
+              <p class="pb-wp">
+                One partner for all digital needs — strategy, execution, and
+                optimisation under one roof.
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Proven Framework</h5>
-                <p class="pb-wp">
-                  Science-based fusion of excellence principles delivering
-                  consistent, measurable results.
-                </p>
-              </div>
+          <div class="pb-why-cell d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Proven Framework</h5>
+              <p class="pb-wp">
+                Science-based fusion of excellence principles delivering
+                consistent, measurable results.
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-cpu-fill"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Future-Ready</h5>
-                <p class="pb-wp">
-                  Solutions built on flexible architectures that adapt as your
-                  business evolves.
-                </p>
-              </div>
+          <div class="pb-why-cell d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-cpu-fill"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Future-Ready</h5>
+              <p class="pb-wp">
+                Solutions built on flexible architectures that adapt as your
+                business evolves.
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pb-why-cell p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Expert Team</h5>
-                <p class="pb-wp">
-                  Deep experience across design, engineering, and growth
-                  strategy.
-                </p>
-              </div>
+          <div class="pb-why-cell d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Expert Team</h5>
+              <p class="pb-wp">
+                Deep experience across design, engineering, and growth strategy.
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pb-why-cell pb-why-cell-nb p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-bar-chart-fill"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Measurable Results</h5>
-                <p class="pb-wp">
-                  Data-driven approach with clear KPIs and transparent reporting
-                  at every stage.
-                </p>
-              </div>
+          <div class="pb-why-cell pb-why-cell-nb d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-bar-chart-fill"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Measurable Results</h5>
+              <p class="pb-wp">
+                Data-driven approach with clear KPIs and transparent reporting
+                at every stage.
+              </p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="pb-why-cell pb-why-cell-nb p-4 p-lg-5 d-flex gap-4">
-              <div class="pb-wi flex-shrink-0">
-                <i class="bi bi-globe-americas"></i>
-              </div>
-              <div>
-                <h5 class="pb-wh">Sustainable Impact</h5>
-                <p class="pb-wp">
-                  Every solution benefits your business, your people, and the
-                  planet long-term.
-                </p>
-              </div>
+          <div class="pb-why-cell pb-why-cell-nb d-flex gap-4 p-4 p-lg-5">
+            <div class="pb-wi flex-shrink-0">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div>
+              <h5 class="pb-wh">Sustainable Impact</h5>
+              <p class="pb-wp">
+                Every solution benefits your business, your people, and the
+                planet long-term.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section id="contact" class="pb-cta-section">
       <div class="pb-cta-dots"></div>
       <div class="container-xl position-relative" style="z-index: 1">
@@ -414,7 +403,7 @@
               </a>
               <a
                 href="services.html"
-                class="btn pb-btn-ghost-w btn-lg rounded-pill px-5 py-3 fw-semibold"
+                class="btn pb-btn-ghost-h btn-lg rounded-pill px-5 py-3 fw-semibold flex-fill"
               >
                 View Services
               </a>
@@ -428,10 +417,10 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="pb-footer">
       <div class="container-xl">
-        <div class="row gy-5 pb-5 pb-footer-border">
+        <div class="pb-footer-top row gy-5">
           <div class="col-lg-4">
             <div class="d-flex align-items-center gap-2 mb-3">
               <img
@@ -490,17 +479,17 @@
             </div>
           </div>
         </div>
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4"
-        >
+
+        <!-- footer bottom bar -->
+        <div class="pb-footer-bottom">
           <p class="mb-0 pb-footer-copy">
             &copy; <span id="year"></span> Pantabyte. All rights reserved.
           </p>
-          <div class="mt-2 mt-md-0">
+          <div class="pb-footer-bottom-links">
             <a href="privacy-policy.html" class="pb-footer-bl"
               >Privacy Policy</a
             >
-            <a href="#" class="pb-footer-bl ms-4">Terms of Service</a>
+            <a href="#" class="pb-footer-bl">Terms of Service</a>
           </div>
         </div>
       </div>
