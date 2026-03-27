@@ -167,3 +167,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// carousel
+
+const row1 = [
+  {
+    image: ``,
+    name: "Callum James",
+    role: "Vice President, Oliver Publishing",
+    desc: "I have worked with Eunders (formerly Logimetry) for over a year on various projects, including a very large project to convert many courses from a proprietary format to SCORM. The Eunders team are excellent; they listen carefully and work quickly. They have great attention to detail. They work independently, but are prepared to ask for more direction when appropriate. Eunders' team have excellent technical skills, especially related to e-learning authorware (e.g. Captivate, Storyline, etc.) and SCORM standards. I highly recommend working with them.",
+  },
+  {
+    image: ``,
+    name: "Lucy",
+    role: "Practice Manager, Physiocentric",
+    desc: "Very helpful and did their best to accommodate our queries and concerns. Will continue using this service. We've had great comments about our new website and feel that it is modern and reaches the correct demographic. Thank you.",
+  },
+  {
+    image: `https://web.archive.org/web/20250719171831im_/https://assets.eunders.org/web/themes/agency/assets/img/testimonials/erik-van-alstine.jpg`,
+    name: "Erik Van Alstine",
+    role: "ErikVanAlstine.com",
+    desc: "Pranshu and his team have done excellent work for our company. I definitely plan to work with them again!",
+  },
+];
+
+function buildCard(item) {
+  return `
+      <div class="c-card">
+        <img 
+          src="${item.img || "https://cdn-icons-png.flaticon.com/512/149/149071.png"}" 
+          onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'" 
+          alt="User" 
+          class="profile-img"
+        >
+        <div class="c-card-title">${item.name}</div>
+        <div class="c-card-role">${item.role}</div>
+        <div class="c-card-desc">${item.desc}</div>
+      </div>`;
+}
+
+function fillTrack(trackId, items) {
+  const track = document.getElementById(trackId);
+  const doubled = [...items];
+  // const doubled = [...items, ...items];
+  track.innerHTML = doubled.map(buildCard).join("");
+}
+
+fillTrack("track1", row1);
