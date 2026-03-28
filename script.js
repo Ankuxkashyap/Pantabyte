@@ -166,6 +166,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  const track = document.getElementById("testimonialTrack");
+  const dots = document.querySelectorAll("#dots span");
+
+  track.addEventListener("scroll", () => {
+    const cards = track.querySelectorAll(".testimonial-card");
+    const scrollLeft = track.scrollLeft;
+    const cardWidth = cards[0].offsetWidth + 16; // card + gap
+    const index = Math.round(scrollLeft / cardWidth);
+    dots.forEach((d, i) => d.classList.toggle("active", i === index));
+  });
 });
 // carousel
 
