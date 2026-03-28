@@ -115,6 +115,7 @@ body {
 }
 
 .pb-btn-primary:hover,
+.pb-btn-primary-about-cta:hover,
 .pb-btn-primary:focus {
   background: var(--orange-lt);
   color: var(--white);
@@ -216,7 +217,20 @@ body {
   z-index: 3;
   color: rgba(255, 255, 255, 0.4);
   font-size: 1rem;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
 }
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+
 .pb-eyebrow {
   display: inline-block;
   font-family: var(--font);
@@ -607,7 +621,7 @@ body {
 }
 
 /* Why choose */
-.pb-why-grid {
+/* .pb-why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid var(--border);
@@ -666,7 +680,7 @@ body {
     text-align: center;
     margin-top: 9px;
   }
-}
+} */
 
 /* CTA section */
 .pb-cta-section {
@@ -934,6 +948,120 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.pb-contact-right .bento-grid-contact {
+  gap: 10px;
+  height: 100%;
+}
+
+.pb-contact-right .bento-card-contact {
+  min-height: 0; /* remove fixed height */
+  height: 100%;
+  padding: 16px 14px;
+  justify-content: center;
+}
+
+.pb-contact-right .bento-card-contact h3 {
+  font-size: 0.7rem;
+  margin-bottom: 6px;
+}
+
+.pb-contact-right .bento-card-contact p {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.pb-contact-right {
+  padding: 32px 24px !important;
+}
+
+.pb-contact-right .page-wrap {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: 100%;
+}
+/* Center form vertically */
+.pb-contact-left {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 70px !important;
+  justify-content: center;
+}
+
+/* Smaller input fields */
+.pb-input {
+  font-size: 0.85rem !important;
+  padding: 8px 12px !important;
+}
+
+.pb-input-icon-pad {
+  padding-left: 32px !important;
+}
+
+.pb-input-icon {
+  font-size: 0.8rem;
+}
+
+/* Smaller label */
+.pb-form-label {
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+/* Smaller textarea */
+.pb-input[rows] {
+  rows: 3;
+  min-height: 80px;
+}
+
+/* Smaller send button */
+.pb-contact-left .btn-lg {
+  font-size: 0.9rem;
+  padding: 10px 20px !important;
+}
+
+/* Tighten gaps between fields */
+.pb-contact-left .d-flex.flex-column.gap-3 {
+  gap: 0.6rem !important;
+}
+
+/* Smaller title/subtitle */
+.pb-form-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
+
+.pb-form-sub {
+  font-size: 0.82rem;
+  margin-bottom: 12px !important;
+}
+
+/* Fix form title alignment */
+.pb-form-title {
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .pb-contact-right {
+    display: flex !important;
+    padding: 20px !important;
+  }
+
+  .pb-contact-right .bento-grid-contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pb-contact-left {
+    border-left: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 580px) {
+  .pb-contact-right .bento-grid-contact {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Mobile: 1 column */
 @media (max-width: 480px) {
@@ -941,14 +1069,51 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 .pb-contact-box {
   background: var(--white);
   border: 1px solid var(--border);
+  width: 68%;
+  margin: 40px auto !important;
 }
+
+@media (max-width: 1200px) {
+  .pb-contact-box {
+    width: 85%;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 32px 36px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .pb-contact-box {
+    width: 90%;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 28px 24px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .pb-contact-box {
+    width: 95%;
+    margin: 20px auto !important;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 24px 16px !important;
+  }
+}
+
 .pb-contact-left {
-  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: none;
 }
 .pb-contact-right {
+  padding: 40px 48px !important;
   background: #f8f9fa;
 }
 .pb-form-title {
@@ -1346,6 +1511,11 @@ body {
   padding: 120px 0 0;
   background: var(--white);
 }
+.testimonial-grid {
+  touch-action: pan-x;
+  -webkit-overflow-scrolling: touch;
+}
+
 .pb-filter-btn {
   background: transparent;
   border: 1px solid var(--border);
@@ -1565,9 +1735,9 @@ body {
   background: transparent;
   padding: 0;
 }
-.pb-ms-dot.is-active {
+/* .pb-ms-dot.is-active {
   background: #111827;
-}
+ */
 /* Bento grid */
 .page-wrap {
   max-width: 1100px;
@@ -2300,7 +2470,7 @@ body {
 .pb-as-img-caption {
   padding: 0 0 0 48px;
 }
-.pb-as-caption-quote {
+/* .pb-as-caption-quote {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-style: italic;
@@ -2308,7 +2478,7 @@ body {
   color: var(--ink);
   line-height: 1.55;
   margin-bottom: 16px;
-}
+} */
 .pb-about-caption-quote {
   font-family: var(--font-display);
   font-size: 2.5rem;

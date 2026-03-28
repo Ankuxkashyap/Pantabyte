@@ -165,7 +165,52 @@ document.addEventListener("DOMContentLoaded", () => {
         moveToSlide();
       });
     });
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentIndex = index + 1;
+        moveToSlide();
+      });
+    });
+
+    let autoPlay = setInterval(() => {
+      if (currentIndex >= allSlides.length - 1) return;
+      currentIndex++;
+      moveToSlide();
+    }, 3000);
+
+    slider.addEventListener("mouseenter", () => {
+      clearInterval(autoPlay);
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      autoPlay = setInterval(() => {
+        if (currentIndex >= allSlides.length - 1) return;
+        currentIndex++;
+        moveToSlide();
+      }, 3000);
+    });
   });
+  // const track = document.getElementById("testimonialTrack");
+  let startX = 0;
+  let isDragging = false;
+
+  track.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  track.addEventListener("touchend", (e) => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // swiped left — next
+        track.scrollBy({ left: track.offsetWidth, behavior: "smooth" });
+      } else {
+        // swiped right — prev
+        track.scrollBy({ left: -track.offsetWidth, behavior: "smooth" });
+      }
+    }
+  });
+
   const track = document.getElementById("testimonialTrack");
   const dots = document.querySelectorAll("#dots span");
 

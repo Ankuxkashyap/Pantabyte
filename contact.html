@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -73,7 +74,7 @@
 
     <!-- Grids -->
 
-    <div class="pb-product-category-contact reveal">
+    <!-- <div class="pb-product-category-contact reveal">
       <h2 class="pb-contact-cat-title">Hi, how can we help?</h2>
       <div class="page-wrap pb-bento-contact reveal">
         <div class="bento-grid-contact">
@@ -134,7 +135,7 @@
           </article>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- cards grid -->
     <h2 class="card-header reveal">Businesses and organizations</h2>
@@ -176,77 +177,129 @@
       </div>
     </div>
     <!-- Contact section -->
-    <section class="pb-section mt-5 mt-lg-0 pb-section-gray reveal">
-      <div class="container-xl">
-        <div class="pb-contact-box rounded-4 overflow-hidden row g-0 reveal">
-          <!-- Left -->
-          <div class="col-lg-6 p-4 p-lg-5 pb-contact-left">
-            <p class="pb-label mb-2">Get In Touch</p>
-            <h2 class="pb-form-title mb-1">Let's work together.</h2>
-            <p class="pb-form-sub mb-4">
-              Tell us about your project and we'll get back to you within 24
-              hours.
-            </p>
-            <div class="d-flex flex-column gap-3">
-              <div>
-                <label class="pb-form-label">Name</label>
-                <div class="pb-input-icon-wrap">
-                  <i class="bi bi-person pb-input-icon"></i>
-                  <input
-                    type="text"
-                    class="form-control pb-input pb-input-icon-pad"
-                    placeholder="Your full name"
-                  />
-                </div>
-              </div>
-              <div>
-                <label class="pb-form-label">Email</label>
-                <div class="pb-input-icon-wrap">
-                  <i class="bi bi-envelope pb-input-icon"></i>
-                  <input
-                    type="email"
-                    class="form-control pb-input pb-input-icon-pad"
-                    placeholder="your@email.com"
-                  />
-                </div>
-              </div>
-              <div>
-                <label class="pb-form-label">Phone Number</label>
-                <div class="pb-input-icon-wrap">
-                  <i class="bi bi-telephone pb-input-icon"></i>
-                  <input
-                    type="tel"
-                    class="form-control pb-input pb-input-icon-pad"
-                    placeholder="+1 (234) 567-890"
-                  />
-                </div>
-              </div>
-              <div>
-                <label class="pb-form-label">Message</label>
-                <textarea
-                  class="form-control pb-input"
-                  rows="4"
-                  placeholder="Tell us about your project..."
-                ></textarea>
-              </div>
-              <button
-                class="btn pb-btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold w-100 mt-1"
+    <section class="pb-contact-box rounded-4 overflow-hidden row g-0 reveal">
+      <!-- Right (now first) -->
+      <div class="col-lg-6 d-lg-flex align-items-center justify-content-center">
+        <div class="page-wrap pb-bento-contact w-100">
+          <div class="bento-grid-contact">
+            <article
+              class="bento-card-contact pb-bento-contact-card-search reveal"
+            >
+              <h3>Help center</h3>
+              <p>
+                Ask questions or report an issue with a Pantabyte product or
+                service.
+              </p>
+              <a
+                href="contact.html"
+                aria-label="Open Workflow Automation details"
               >
-                Send Message <i class="bi bi-arrow-right ms-1"></i>
-              </button>
+                <span class="pb-gcard-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </article>
+
+            <article
+              class="bento-card-contact pb-bento-contact-card-works reveal"
+            >
+              <h3>Inquiry</h3>
+              <p>For any inquiries, email us at hello@pantabyte.com</p>
+              <a href="contact.html" aria-label="Open AI Integration details">
+                <span class="pb-gcard-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </article>
+
+            <article class="bento-card-contact pb-bento-contact-card-ai reveal">
+              <h3>Let's Work Together</h3>
+              <p>
+                Got an idea or need help growing your business? We're here to
+                help.
+              </p>
+              <a href="contact.html" aria-label="Open CRM Setup details">
+                <span class="pb-gcard-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </article>
+
+            <article
+              class="bento-card-contact pb-bento-contact-card-lens reveal"
+            >
+              <h3>We'd Love to Hear From You</h3>
+              <p>
+                Whether you have a question, idea, or project in mind — let's
+                connect.
+              </p>
+              <a
+                href="contact.html"
+                aria-label="Open System Integration details"
+              >
+                <span class="pb-gcard-link">
+                  <i class="bi bi-arrow-up-right"></i>
+                </span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left (now second) -->
+      <div class="col-lg-6 p-4 p-lg-5 pb-contact-left">
+        <p class="pb-label mb-2">Get In Touch</p>
+        <h2 class="pb-form-title mb-1">Let's work together.</h2>
+        <p class="pb-form-sub mb-4">
+          Tell us about your project and we'll get back to you within 24 hours.
+        </p>
+        <div class="d-flex flex-column gap-3">
+          <div>
+            <label class="pb-form-label">Name</label>
+            <div class="pb-input-icon-wrap">
+              <i class="bi bi-person pb-input-icon"></i>
+              <input
+                type="text"
+                class="form-control pb-input pb-input-icon-pad"
+                placeholder="Your full name"
+              />
             </div>
           </div>
-
-          <!-- Right -->
-          <div
-            class="col-lg-6 pb-contact-right d-none d-lg-flex align-items-center justify-content-center p-5"
-          >
-            <img
-              src="assets/images/Contact us-rafiki.svg"
-              alt="Contact Svg "
-              style="width: 5000px"
-            />
+          <div>
+            <label class="pb-form-label">Email</label>
+            <div class="pb-input-icon-wrap">
+              <i class="bi bi-envelope pb-input-icon"></i>
+              <input
+                type="email"
+                class="form-control pb-input pb-input-icon-pad"
+                placeholder="your@email.com"
+              />
+            </div>
           </div>
+          <div>
+            <label class="pb-form-label">Phone Number</label>
+            <div class="pb-input-icon-wrap">
+              <i class="bi bi-telephone pb-input-icon"></i>
+              <input
+                type="tel"
+                class="form-control pb-input pb-input-icon-pad"
+                placeholder="+1 (234) 567-890"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="pb-form-label">Message</label>
+            <textarea
+              class="form-control pb-input"
+              rows="4"
+              placeholder="Tell us about your project..."
+            ></textarea>
+          </div>
+          <button
+            class="btn pb-btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold w-100 mt-1"
+          >
+            Send Message <i class="bi bi-arrow-right ms-1"></i>
+          </button>
         </div>
       </div>
     </section>
