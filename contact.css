@@ -1,0 +1,356 @@
+.pb-product-category-contact {
+  margin-top: 100px;
+}
+
+.pb-contact-cat-title {
+  font-family: var(--font);
+  font-size: 3rem;
+  line-height: 1.1666666667;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: var(--ink);
+  margin-top: 30px;
+  padding-bottom: 7px;
+}
+
+.pb-contact-sub {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ── Bento grid contact ── */
+.bento-grid-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bento-card-contact {
+  min-height: 320px;
+  border-radius: 12px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.bento-card-contact h3 {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bento-card-contact p {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+/* Bento contact colors */
+.pb-bento-contact-card-search {
+  background: rgba(59, 130, 246, 0.12);
+}
+.pb-bento-contact-card-works {
+  background: rgba(234, 88, 12, 0.1);
+  justify-content: center;
+}
+.pb-bento-contact-card-ai {
+  background: rgba(168, 85, 247, 0.12);
+  justify-content: center;
+}
+.pb-bento-contact-card-lens {
+  justify-content: center;
+  background: rgba(234, 88, 12, 0.07);
+}
+
+/* pb-bento-contact overrides */
+.pb-bento-contact .card-search {
+  background: rgba(70, 101, 202, 0.115);
+}
+.pb-bento-contact .card-works {
+  background: rgba(174, 70, 179, 0.12);
+}
+.pb-bento-contact .card-ai {
+  background: rgba(41, 161, 97, 0.1);
+}
+.pb-bento-contact .card-lens {
+  background: rgba(138, 153, 50, 0.12);
+}
+
+/* ── Cards grid (businesses section) ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.card-header {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1.2857142857;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.card-link {
+  align-self: flex-end;
+  margin-top: 16px;
+  color: #1a73e8;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* ── Contact form box ── */
+.pb-contact-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  width: 68%;
+  margin: 40px auto !important;
+  animation: fadeUp 0.8s ease both 0.2s;
+}
+
+/* ── Left form column ── */
+.pb-contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 48px !important;
+  border-right: 1px solid var(--border);
+  border-left: none;
+}
+
+/* ── Right bento column ── */
+.pb-contact-right {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 32px !important;
+  background: #f8f9fa;
+}
+
+.pb-contact-right .page-wrap {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pb-contact-right .bento-grid-contact {
+  gap: 10px;
+  height: 100%;
+}
+
+.pb-contact-right .bento-card-contact {
+  min-height: 0;
+  height: 100%;
+  padding: 16px 14px;
+  justify-content: center;
+}
+
+.pb-contact-right .bento-card-contact h3 {
+  font-size: 0.7rem;
+  margin-bottom: 6px;
+}
+
+.pb-contact-right .bento-card-contact p {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* ── Form styles ── */
+.pb-form-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--ink);
+  text-align: left;
+}
+
+.pb-form-sub {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.75;
+  letter-spacing: 0em;
+  margin-bottom: 12px !important;
+}
+
+.pb-form-label {
+  display: block;
+  font-family: var(--font);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  margin-bottom: 4px;
+}
+
+.pb-input {
+  font-family: var(--font);
+  font-size: 0.85rem !important;
+  color: var(--ink);
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  padding: 8px 12px !important;
+}
+
+.pb-input:focus {
+  box-shadow: none !important;
+  border-color: var(--orange) !important;
+  background: var(--white) !important;
+}
+
+.pb-input::placeholder {
+  color: #b0b7c3;
+}
+
+.pb-input-icon-wrap {
+  position: relative;
+}
+
+.pb-input-icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 0.8rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.pb-input-icon-pad {
+  padding-left: 32px !important;
+}
+
+.pb-input[rows] {
+  min-height: 80px;
+}
+
+.pb-contact-left .btn-lg {
+  font-size: 0.9rem;
+  padding: 10px 20px !important;
+}
+
+.pb-contact-left .d-flex.flex-column.gap-3 {
+  gap: 0.6rem !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+  .pb-contact-box {
+    width: 85%;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 32px 36px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .pb-contact-box {
+    width: 90%;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 28px 24px !important;
+  }
+  .pb-contact-left {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .pb-contact-right {
+    padding: 24px !important;
+  }
+  .pb-contact-right .bento-grid-contact {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+  .pb-contact-right .bento-card-contact {
+    height: auto;
+    min-height: 100px;
+  }
+  .bento-grid-contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pb-contact-cat-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 12px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .pb-contact-box {
+    width: 95%;
+    margin: 20px auto !important;
+  }
+  .pb-contact-left,
+  .pb-contact-right {
+    padding: 24px 16px !important;
+  }
+  .pb-contact-right .bento-grid-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

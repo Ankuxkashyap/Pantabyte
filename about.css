@@ -1,0 +1,414 @@
+/* ── Main wrapper ── */
+.pb-about-simple {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  animation: fadeUp 0.8s ease both 0.1s;
+}
+
+/* ── Hero headline ── */
+.hero-section {
+  padding: 80px 24px;
+  background: #fff;
+  text-align: center;
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
+  color: #202124;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.pb-about-sub {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* ── Image offset ── */
+.pb-as-img-offset {
+  background-color: #f8f9fae9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 72px 0;
+}
+
+.pb-as-img-offset img {
+  height: 380px;
+  object-fit: cover;
+  filter: brightness(0.88);
+}
+
+.pb-as-img-caption {
+  padding: 0 0 0 48px;
+}
+
+.pb-as-caption-quote {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.pb-as-caption-attr {
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ── Product category about ── */
+.pb-product-category-about {
+  padding-top: 30px;
+  padding-bottom: 55px;
+}
+
+.pb-about-cat-title {
+  font-family: var(--font);
+  font-size: 3rem;
+  line-height: 1.1666667;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: var(--ink);
+  margin-top: 30px;
+  padding-bottom: 7px;
+}
+
+/* ── Bento grid (about) ── */
+.bento-grid-about {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, auto));
+  gap: 20px;
+}
+
+.bento-card-about {
+  border-radius: 7px;
+  padding: 26px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bento-card-about h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+
+.bento-card-about p {
+  margin: 0;
+  max-width: 86%;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.bento-card-about a {
+  margin-top: 10px;
+  color: var(--ink);
+  line-height: 0;
+  text-decoration: none;
+}
+
+.bento-card-about a svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* About bento colors */
+.pb-bento-about .card-search {
+  background: rgba(70, 101, 202, 0.115);
+}
+.pb-bento-about .card-works {
+  background: rgba(174, 70, 179, 0.12);
+}
+.pb-bento-about .card-ai {
+  background: rgba(41, 161, 97, 0.1);
+}
+.pb-bento-about .card-lens {
+  background: rgba(138, 153, 50, 0.12);
+}
+
+/* ── Testimonials ── */
+.testimonial-section {
+  width: 100%;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 40px;
+  touch-action: pan-x;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 28px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.avatar-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #b0baca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.avatar-wrap svg {
+  width: 42px;
+  height: 42px;
+  fill: #fff;
+}
+
+.author-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.author-role {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #555;
+  margin: 0 0 16px;
+}
+
+.c-card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 13px;
+  color: #5f6368;
+  line-height: 1.55;
+}
+
+.carousel-label {
+  font-family: var(--font);
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.testimonial-desc {
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.65;
+  text-align: left;
+  margin-bottom: 0;
+  flex-grow: 1;
+  width: 100%;
+}
+.testimonial {
+  /* margin-bottom: 50px; */
+  padding-bottom: 80px;
+}
+
+.testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 28px 22px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar circle */
+.avatar-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #b0baca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* person silhouette SVG inside placeholder */
+.avatar-wrap svg {
+  width: 42px;
+  height: 42px;
+  fill: #fff;
+}
+
+.author-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.author-role {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #555;
+  margin: 0 0 16px;
+  text-align: center;
+}
+.carousel-dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.carousel-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.carousel-dots span.active {
+  background: #333;
+}
+
+/* ── Grow with Pantabyte ── */
+.pb-about-caption-quote {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.pb-about-caption-attr {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero-headline {
+    font-size: 36px;
+  }
+  .pb-about-cat-title {
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  .carousel-label {
+    font-size: 2rem;
+  }
+  .pb-about-caption-quote {
+    font-size: 2rem;
+  }
+  .pb-as-img-caption {
+    padding: 32px 0 0;
+  }
+  .hero-section {
+    padding: 40px 10px;
+  }
+  .c-card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-search,
+  .card-works,
+  .card-ai,
+  .card-lens {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .testimonial-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 16px;
+    scrollbar-width: none;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-card {
+    min-width: 78vw;
+    width: 320px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  /* .c-card-desc {
+    -webkit-line-clamp: 2;
+  } */
+  .carousel-dots {
+    display: flex;
+  }
+
+  .bento-grid-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-headline {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-dots {
+    display: none;
+  }
+}

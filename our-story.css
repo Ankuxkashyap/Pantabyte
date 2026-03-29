@@ -1,0 +1,114 @@
+/* ── Main wrapper ── */
+.pb-about-simple {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  animation: fadeUp 0.8s ease both 0.1s;
+}
+
+/* ── Section headings ── */
+.pb-as-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-top: 56px;
+  margin-bottom: 20px;
+}
+
+/* ── Body text ── */
+.pb-as-p {
+  font-family: var(--font);
+  font-size: 1.05rem;
+  color: var(--ink-2);
+  line-height: 1.82;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+/* ── Divider ── */
+.pb-as-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 56px 0 0;
+}
+
+/* ── Services list ── */
+.pb-as-service-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pb-as-service-row:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+.pb-as-service-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-2);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.pb-as-service-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.pb-as-service-desc {
+  font-family: var(--font);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pb-as-service-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.pb-as-service-link:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+
+/* ── CTA buttons ── */
+.pb-as-cta-btns {
+  margin-top: 32px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .pb-about-simple {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .pb-as-h2 {
+    margin-top: 36px;
+    margin-bottom: 14px;
+  }
+}

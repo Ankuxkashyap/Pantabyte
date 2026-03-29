@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".pb-legal-section");
   const tocLinks = document.querySelectorAll(".pb-toc-link");
 
-  // const filterBtns = document.querySelectorAll(".pb-filter-btn");
-  // const categories = document.querySelectorAll(".pb-product-category");
-
   window.addEventListener(
     "scroll",
     () => {
@@ -190,9 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 3000);
     });
   });
-  // const track = document.getElementById("testimonialTrack");
   let startX = 0;
-  let isDragging = false;
 
   track.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
@@ -202,10 +197,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const diff = startX - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
-        // swiped left — next
         track.scrollBy({ left: track.offsetWidth, behavior: "smooth" });
       } else {
-        // swiped right — prev
         track.scrollBy({ left: -track.offsetWidth, behavior: "smooth" });
       }
     }
@@ -217,11 +210,12 @@ document.addEventListener("DOMContentLoaded", () => {
   track.addEventListener("scroll", () => {
     const cards = track.querySelectorAll(".testimonial-card");
     const scrollLeft = track.scrollLeft;
-    const cardWidth = cards[0].offsetWidth + 16; // card + gap
+    const cardWidth = cards[0].offsetWidth + 16;
     const index = Math.round(scrollLeft / cardWidth);
     dots.forEach((d, i) => d.classList.toggle("active", i === index));
   });
 });
+
 // carousel
 
 const row1 = [
@@ -263,8 +257,17 @@ function buildCard(item) {
 function fillTrack(trackId, items) {
   const track = document.getElementById(trackId);
   const doubled = [...items];
-  // const doubled = [...items, ...items];
   track.innerHTML = doubled.map(buildCard).join("");
 }
+
+const navLinks = document.querySelectorAll(".pb-nav-link");
+const currentPage = window.location.pathname.split("/").pop();
+
+navLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href");
+  if (linkPage === currentPage) {
+    link.classList.add("active");
+  }
+});
 
 fillTrack("track1", row1);
